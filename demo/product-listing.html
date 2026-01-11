@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Collection | Heaven Classics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-black': '#1a1a1a',
+                        'brand-gold': '#d4af37',
+                        'brand-gray': '#f4f4f4',
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    animation: {
+                        'fade-up': 'fadeInUp 0.6s ease-out forwards',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .stagger-1 { animation-delay: 100ms; }
+        .stagger-2 { animation-delay: 200ms; }
+        .stagger-3 { animation-delay: 300ms; }
+        .stagger-4 { animation-delay: 400ms; }
+        .stagger-5 { animation-delay: 500ms; }
+        .stagger-6 { animation-delay: 600ms; }
+        
+        /* Custom Checkbox */
+        .custom-checkbox:checked {
+            background-color: #d4af37;
+            border-color: #d4af37;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-black bg-white">
+
+    <nav class="sticky top-0 w-full z-50 bg-white border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="font-serif text-2xl font-bold tracking-wider">HEAVEN<span class="text-brand-gold">CLASSICS</span></a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold transition">Home</a>
+                    <a href="#" class="text-xs font-bold uppercase tracking-widest text-brand-gold">Shop</a>
+                    <a href="#" class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold transition">About</a>
+                    <a href="#" class="px-5 py-2 bg-brand-black text-white text-xs font-bold uppercase tracking-widest hover:bg-brand-gold transition">Cart (0)</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-brand-gray py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center animate-fade-up">
+            <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">The Collection</h1>
+            <p class="text-gray-500 italic font-serif">Curated styles from top international brands</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row gap-12">
+            
+            <aside class="w-full md:w-64 flex-shrink-0 animate-fade-up">
+                <div class="sticky top-24 space-y-8">
+                    <div>
+                        <h3 class="font-serif font-bold text-lg mb-4 border-b pb-2">Categories</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li><a href="#" class="hover:text-brand-gold transition">All Products</a></li>
+                            <li><a href="#" class="hover:text-brand-gold transition">Men's Fashion</a></li>
+                            <li><a href="#" class="hover:text-brand-gold transition">Women's Collection</a></li>
+                            <li><a href="#" class="hover:text-brand-gold transition">Kids (FirstCry)</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-serif font-bold text-lg mb-4 border-b pb-2">Brands</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer group">
+                                <input type="checkbox" class="form-checkbox h-4 w-4 border-gray-300 rounded custom-checkbox focus:ring-0">
+                                <span class="text-sm text-gray-600 group-hover:text-brand-black">Cantabil</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer group">
+                                <input type="checkbox" class="form-checkbox h-4 w-4 border-gray-300 rounded custom-checkbox focus:ring-0">
+                                <span class="text-sm text-gray-600 group-hover:text-brand-black">Cobb / UCB</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer group">
+                                <input type="checkbox" class="form-checkbox h-4 w-4 border-gray-300 rounded custom-checkbox focus:ring-0">
+                                <span class="text-sm text-gray-600 group-hover:text-brand-black">Shoppers Stop</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer group">
+                                <input type="checkbox" class="form-checkbox h-4 w-4 border-gray-300 rounded custom-checkbox focus:ring-0">
+                                <span class="text-sm text-gray-600 group-hover:text-brand-black">Lifestyle</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-serif font-bold text-lg mb-4 border-b pb-2">Price</h3>
+                        <input type="range" class="w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-brand-gold">
+                        <div class="flex justify-between text-xs text-gray-500 mt-2">
+                            <span>$0</span>
+                            <span>$500+</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="flex-1">
+                <div class="flex justify-between items-center mb-8 pb-4 border-b animate-fade-up">
+                    <p class="text-sm text-gray-500">Showing 1–6 of 24 results</p>
+                    <select class="border-none bg-transparent text-sm font-bold uppercase tracking-wider focus:ring-0 cursor-pointer">
+                        <option>Sort by: Best Sellers</option>
+                        <option>Sort by: Newest</option>
+                        <option>Sort by: Price Low to High</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group animate-fade-up stagger-1 opacity-0">
+                        <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 ease-in-out">
+                            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition duration-500">
+                                <button class="w-full bg-white text-brand-black py-3 uppercase text-xs font-bold tracking-widest hover:bg-brand-black hover:text-white transition shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            <span class="absolute top-3 left-3 bg-brand-black text-white text-[10px] uppercase font-bold px-2 py-1 tracking-widest">New</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xs text-gray-500 mb-1 uppercase tracking-widest">Cantabil</p>
+                            <h3 class="font-serif font-bold text-lg mb-1 group-hover:text-brand-gold transition">Classic Linen Jacket</h3>
+                            <span class="text-brand-black font-bold">$129.00</span>
+                        </div>
+                    </div>
+
+                    <div class="group animate-fade-up stagger-2 opacity-0">
+                        <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 ease-in-out">
+                            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition duration-500">
+                                <button class="w-full bg-white text-brand-black py-3 uppercase text-xs font-bold tracking-widest hover:bg-brand-black hover:text-white transition shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xs text-gray-500 mb-1 uppercase tracking-widest">Shoppers Stop</p>
+                            <h3 class="font-serif font-bold text-lg mb-1 group-hover:text-brand-gold transition">Floral Summer Dress</h3>
+                            <span class="text-gray-400 line-through text-sm mr-2">$89.00</span>
+                            <span class="text-brand-gold font-bold">$69.00</span>
+                        </div>
+                    </div>
+
+                    <div class="group animate-fade-up stagger-3 opacity-0">
+                        <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 ease-in-out">
+                            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition duration-500">
+                                <button class="w-full bg-white text-brand-black py-3 uppercase text-xs font-bold tracking-widest hover:bg-brand-black hover:text-white transition shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xs text-gray-500 mb-1 uppercase tracking-widest">Cobb</p>
+                            <h3 class="font-serif font-bold text-lg mb-1 group-hover:text-brand-gold transition">Urban Cotton Tee</h3>
+                            <span class="text-brand-black font-bold">$35.00</span>
+                        </div>
+                    </div>
+
+                    <div class="group animate-fade-up stagger-4 opacity-0">
+                        <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 ease-in-out">
+                            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition duration-500">
+                                <button class="w-full bg-white text-brand-black py-3 uppercase text-xs font-bold tracking-widest hover:bg-brand-black hover:text-white transition shadow-lg">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xs text-gray-500 mb-1 uppercase tracking-widest">FirstCry</p>
+                            <h3 class="font-serif font-bold text-lg mb-1 group-hover:text-brand-gold transition">Toddler Knit Sweater</h3>
+                            <span class="text-brand-black font-bold">$45.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 flex justify-center space-x-2 animate-fade-up stagger-6 opacity-0">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center border border-brand-black bg-brand-black text-white">1</a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-300 hover:border-brand-black hover:text-brand-black transition">2</a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-300 hover:border-brand-black hover:text-brand-black transition">></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-black text-white py-12 text-center text-sm">
+        <p>© 2024 - Heaven Classics - All Rights Reserved! [cite: 57]</p>
+    </footer>
+</body>
+</html>

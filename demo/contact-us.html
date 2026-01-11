@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Heaven Classics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-black': '#1a1a1a',
+                        'brand-gold': '#d4af37',
+                        'brand-gray': '#f4f4f4',
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-brand-black bg-white">
+
+    <nav class="sticky top-0 w-full z-50 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="font-serif text-2xl font-bold tracking-wider">HEAVEN<span class="text-brand-gold">CLASSICS</span></a>
+            <a href="index.html" class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold">Back Home</a>
+        </div>
+    </nav>
+
+    <div class="flex flex-col lg:flex-row h-[calc(100vh-80px)]">
+        
+        <div class="lg:w-1/3 bg-brand-black text-white p-12 flex flex-col justify-center relative overflow-hidden">
+            <div class="absolute -top-20 -right-20 w-64 h-64 border-[30px] border-gray-800 rounded-full opacity-50"></div>
+            
+            <div class="relative z-10 space-y-12">
+                <div>
+                    <h1 class="font-serif text-4xl font-bold mb-6">Get in Touch</h1>
+                    <p class="text-gray-400">We'd love to hear from you. Our team is always here to chat.</p>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-brand-gold mt-1">📍</div>
+                        <div>
+                            <h3 class="font-bold uppercase tracking-widest text-xs mb-1">Visit Us</h3>
+                            <p class="text-gray-300">1315 Street Mo, Var Mag<br>Near Ostr Post, Rahun Lane</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="text-brand-gold mt-1">📞</div>
+                        <div>
+                            <h3 class="font-bold uppercase tracking-widest text-xs mb-1">Call Us</h3>
+                            <p class="text-gray-300">81-40013-49000</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="text-brand-gold mt-1">✉️</div>
+                        <div>
+                            <h3 class="font-bold uppercase tracking-widest text-xs mb-1">Email</h3>
+                            <p class="text-gray-300">heavencinic.com</p> </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 border-t border-gray-800">
+                    <p class="text-xs text-gray-500">© 2024 Heaven Classics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-2/3 p-12 lg:p-24 bg-brand-gray flex items-center justify-center">
+            <form class="w-full max-w-lg bg-white p-10 shadow-2xl space-y-6 transform hover:-translate-y-2 transition duration-500">
+                <h2 class="font-serif text-2xl font-bold mb-6 text-brand-black">Send a Message</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-400">First Name</label>
+                        <input type="text" class="w-full border-b-2 border-gray-200 p-2 focus:outline-none focus:border-brand-gold transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-400">Last Name</label>
+                        <input type="text" class="w-full border-b-2 border-gray-200 p-2 focus:outline-none focus:border-brand-gold transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-400">Email Address</label>
+                    <input type="email" class="w-full border-b-2 border-gray-200 p-2 focus:outline-none focus:border-brand-gold transition">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-400">Message</label>
+                    <textarea class="w-full border-b-2 border-gray-200 p-2 h-32 focus:outline-none focus:border-brand-gold transition resize-none"></textarea>
+                </div>
+
+                <button class="w-full bg-brand-black text-white font-bold uppercase tracking-widest py-4 hover:bg-brand-gold transition duration-300 shadow-lg">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

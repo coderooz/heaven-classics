@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Linen Jacket | Heaven Classics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-black': '#1a1a1a',
+                        'brand-gold': '#d4af37',
+                        'brand-gray': '#f4f4f4',
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .slide-in-left { animation: slideLeft 0.8s ease-out forwards; opacity: 0; }
+        .slide-in-right { animation: slideRight 0.8s ease-out forwards; opacity: 0; }
+        
+        @keyframes slideLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-black">
+
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="font-serif text-2xl font-bold tracking-wider">HEAVEN<span class="text-brand-gold">CLASSICS</span></a>
+            <a href="products.html" class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold">Back to Shop</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <div class="slide-in-left space-y-4">
+                <div class="aspect-[3/4] overflow-hidden bg-gray-100 w-full relative group cursor-zoom-in">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Product Main" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition cursor-pointer">
+                </div>
+            </div>
+
+            <div class="slide-in-right lg:sticky lg:top-24 h-fit">
+                <div class="mb-2">
+                    <span class="text-brand-gold font-bold uppercase tracking-widest text-xs">Cantabil</span>
+                </div>
+                <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">Classic Linen Jacket</h1>
+                <p class="text-2xl font-light mb-8">$129.00</p>
+
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Elevate your wardrobe with our Classic Linen Jacket. Designed for the modern professional, this piece combines breathable fabric with a sharp, tailored fit. Perfect for office wear or a casual evening out.
+                </p>
+
+                <div class="mb-6">
+                    <span class="block text-xs font-bold uppercase tracking-widest mb-3">Color: <span class="text-gray-500 font-normal">Navy Blue</span></span>
+                    <div class="flex space-x-3">
+                        <button class="w-8 h-8 rounded-full bg-blue-900 border-2 border-brand-black ring-2 ring-offset-2 ring-gray-200"></button>
+                        <button class="w-8 h-8 rounded-full bg-gray-200 border border-transparent hover:border-brand-black transition"></button>
+                        <button class="w-8 h-8 rounded-full bg-black border border-transparent hover:border-brand-black transition"></button>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <div class="flex justify-between items-end mb-3">
+                        <span class="block text-xs font-bold uppercase tracking-widest">Size</span>
+                        <button class="text-xs underline text-gray-500 hover:text-brand-black">Size Guide</button>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <button class="w-12 h-12 border border-gray-200 hover:border-brand-black flex items-center justify-center text-sm transition">S</button>
+                        <button class="w-12 h-12 border-2 border-brand-black flex items-center justify-center text-sm font-bold">M</button>
+                        <button class="w-12 h-12 border border-gray-200 hover:border-brand-black flex items-center justify-center text-sm transition">L</button>
+                        <button class="w-12 h-12 border border-gray-200 hover:border-brand-black flex items-center justify-center text-sm transition">XL</button>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 mb-12">
+                    <button class="flex-1 bg-brand-black text-white h-14 uppercase font-bold tracking-widest hover:bg-brand-gold transition duration-300">
+                        Add to Cart
+                    </button>
+                    <button class="w-14 h-14 border border-gray-300 flex items-center justify-center hover:border-brand-black hover:text-brand-gold transition">
+                        ♥
+                    </button>
+                </div>
+
+                <div class="border-t border-gray-200">
+                    <details class="group py-4 border-b border-gray-200 cursor-pointer" open>
+                        <summary class="flex justify-between items-center font-bold font-serif text-lg list-none">
+                            <span>Details & Care</span>
+                            <span class="transition group-open:rotate-180">↓</span>
+                        </summary>
+                        <div class="text-gray-500 mt-4 text-sm leading-relaxed">
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>100% Organic Linen</li>
+                                <li>Slim fit silhouette</li>
+                                <li>Dry clean only</li>
+                                <li>Imported</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+                    <details class="group py-4 border-b border-gray-200 cursor-pointer">
+                        <summary class="flex justify-between items-center font-bold font-serif text-lg list-none">
+                            <span>Shipping & Returns</span>
+                            <span class="transition group-open:rotate-180">↓</span>
+                        </summary>
+                        <div class="text-gray-500 mt-4 text-sm leading-relaxed">
+                            Free shipping on orders over $150. Returns accepted within 30 days of purchase.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-32 border-t pt-16">
+            <h2 class="font-serif text-3xl font-bold mb-10 text-center">Complete The Look</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="group">
+                    <div class="overflow-hidden aspect-[3/4] bg-gray-100 mb-3">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="font-serif font-bold text-sm">Leather Boots</h3>
+                    <p class="text-gray-500 text-xs">$149.00</p>
+                </div>
+                <div class="group">
+                    <div class="overflow-hidden aspect-[3/4] bg-gray-100 mb-3">
+                        <img src="https://images.unsplash.com/photo-1551488852-d8048f5422bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="font-serif font-bold text-sm">Silk Scarf</h3>
+                    <p class="text-gray-500 text-xs">$45.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
