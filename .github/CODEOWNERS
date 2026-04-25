@@ -1,0 +1,22 @@
+# Code Owners
+
+# Default owner for everything not matched below
+* @coderooz
+
+# Documentation
+*.md @coderooz
+project.n.md @coderooz
+
+# GitHub configuration
+/.github/ @coderooz
+/.github/** @coderooz
+
+# Next.js configuration
+/next.config.ts @coderooz
+/tsconfig.json @coderooz
+/postcss.config.mjs @coderooz
+/eslint.config.mjs @coderooz
+
+# App Router pages
+/app/ @coderooz
+/app/** @coderooz

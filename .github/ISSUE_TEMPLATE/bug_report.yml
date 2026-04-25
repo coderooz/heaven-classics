@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a defect in the application.
+title: "[Bug]: "
+labels:
+  - bug
+assignees:
+  - 'coderooz'
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the bug clearly and concisely.
+      placeholder: The feature X is not working as expected when Y happens.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps that reproduce the issue.
+      placeholder: |
+        1. Navigate to page X
+        2. Click on button Y
+        3. See the error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The application should do X.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: The application does Y instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P1 - Critical (blocks usage)
+        - P2 - High (major impact)
+        - P3 - Medium (workaround exists)
+        - P4 - Low (minor issue)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include screenshots, browser version, OS, or any other relevant details.

@@ -1,0 +1,36 @@
+app:
+  - "app/**"
+
+public:
+  - "public/**"
+
+nextjs:
+  - "next.config.ts"
+  - "next-env.d.ts"
+
+config:
+  - "*.config.*"
+  - "tsconfig.json"
+  - ".nvmrc"
+
+eslint:
+  - "eslint.config.mjs"
+  - ".eslintrc*"
+
+style:
+  - "*.css"
+  - "postcss.config.*"
+  - "tailwind.config.*"
+
+template:
+  - "*.md"
+  - "CHANGELOG.md"
+  - "CONTRIBUTING.md"
+  - "SECURITY.md"
+  - "LICENSE.md"
+
+github:
+  - ".github/**"
+
+automation:
+  - ".github/workflows/**"
